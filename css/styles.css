@@ -635,6 +635,13 @@ left: 120px;
 padding-left: 269px;
 }
 
+.footer-content {
+display: flex;
+align-items: baseline;
+margin-right: 120px
+}
+       
+
 .social-link-footer {
    display: inline-flex;
       justify-content: center;
