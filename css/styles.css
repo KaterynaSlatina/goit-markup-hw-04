@@ -501,7 +501,6 @@ top: 0;
 }
 
  .footer {
-   display: flex;
     background-color: var(--main-color);
    padding: 100px 0;
     }
