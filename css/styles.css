@@ -78,6 +78,9 @@ button {
  
 .header {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-header {
@@ -120,22 +123,32 @@ padding: 24px 0 24px 0;
    text-decoration: none;
    line-height: 1.5;
    padding: 24px 0;
-    
+   
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--hover-color);
+   color: var(--hover-color);
    transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link::after {
+.header-link-underline {
+position: relative;
+color: var(--hover-color);
+}
+
+.header-link-underline::after {
+   position: absolute;
    content: '';
    width: 66px;
    height: 4px;
    background-color: var(--hover-color);
    text-decoration: underline;
+   left: 0;
+   bottom: -1px;
+   border-radius: 2px;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -238,11 +251,13 @@ margin: 0 auto;
 
 .adv-icon-background {
 display: flex;
-   justify-content: center;
-   align-items: center;
+justify-content: center;
+align-items: center;
 background-color: var(--footer-color);
 width: 264px;
-  height: 112px;
+height: 112px;
+border-radius: 4px;
+margin-bottom: 8px;
 }
 
 
@@ -446,6 +461,7 @@ font-family: 'Roboto',
 .product-item {
    width: calc((100% - 48px) / 3);
    position: relative;
+   overflow: hidden;
 }
 
 .product-item:hover,
@@ -527,23 +543,30 @@ gap: 24px;
 
  }
 
-
-
-
  .clients-link {
 display: flex;
 width: 168px;
 height: 88px;
 justify-content: center;
 align-items: center;
-border: 1px solid var(--border-color);
+border: 1px solid #8e8f99;
 border-radius: 4px;
+color: var(--customers-color)
 fill: var(--customers-color);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .clients-link:hover {
+ .clients-link:hover,
+ .clients-link:focus  {
    border-color: var(--hover-color);
+   color: var(--hover-color);
  }
+
+.clients-icon{
+fill: currentColor;
+}
+
 
  .clients-link:hover .clients-icon {
 fill: var(--hover-color);
