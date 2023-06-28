@@ -136,6 +136,7 @@ padding: 24px 0 24px 0;
 .header-link-underline {
 position: relative;
 color: var(--hover-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-underline::after {
@@ -148,7 +149,7 @@ color: var(--hover-color);
    left: 0;
    bottom: -1px;
    border-radius: 2px;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .address {
@@ -165,6 +166,7 @@ margin-left: auto;
     font-size: 16px;
     line-height: 1.5;
    text-decoration: none;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .link-contact:hover,
@@ -387,7 +389,8 @@ font-family: 'Roboto',
 
 
 .name-job {
-   padding: 32px 16px;
+
+   padding: 32px 0;
    
 }
 
@@ -551,7 +554,7 @@ justify-content: center;
 align-items: center;
 border: 1px solid #8e8f99;
 border-radius: 4px;
-color: var(--customers-color)
+color: var(--customers-color);
 fill: var(--customers-color);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -575,32 +578,40 @@ fill: var(--hover-color);
 .social-link-our-team {
 display: flex;
 justify-content: center;
+align-items: center;
 background-color: var(--brand-color);
 width: 40px;
 height: 40px;
 border-radius: 50%;
 gap: 24px;
 margin: 0 auto;
+width: 100%;
+height: 100%;
  } 
 
 
- .social-link-our-team:hover {
+ .social-link-our-team:hover,
+.social-link-our-team:focus {
 background-color: var(--hover-color);
-
  }
 
 .social-link-team-list {
    display: flex;
       justify-content: center;
-      width: 40px;
-      height: 40px;
+      
       border-radius: 50%;
       gap: 24px;
       margin: 0 auto;
       padding-top: 8px;
 }
 
+.social-link-list {
+   width: 40px;
+   height: 40px;
+}
+
 .social-icon-our-team {
+   fill: var(--footer-color);
 }
 
 .footer-container-text {
