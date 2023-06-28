@@ -587,6 +587,7 @@ gap: 24px;
 margin: 0 auto;
 width: 100%;
 height: 100%;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  } 
 
 
@@ -618,7 +619,7 @@ background-color: var(--hover-color);
 .footer-container-text {
    display: flex;
    align-items: baseline;
-   position: relative;
+
 }
 
 .footer-title {
@@ -632,10 +633,9 @@ background-color: var(--hover-color);
 }
 
 .footer-container-social {
-position: absolute;
 top: 0;
 left: 120px;
-padding-left: 269px;
+
 }
 
 .footer-content {
@@ -663,6 +663,7 @@ margin-right: 120px
       background-color: var(--brand-color);
       border-radius: 50%;
       margin: 0 auto;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
