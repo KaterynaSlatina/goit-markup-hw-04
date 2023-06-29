@@ -623,11 +623,10 @@ background-color: var(--hover-color);
 }
 
 .text-footer {
-   display: flex;
    color: var(--footer-color);
    line-height: 1.5;
    letter-spacing: 0.02em;
-   max-width: 264px;
+   width: 264px;
 }
 
 .footer-title {
