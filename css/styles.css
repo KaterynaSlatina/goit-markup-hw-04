@@ -646,9 +646,7 @@ left: 120px;
 }
 
 .footer-content {
-display: flex;
-align-items: baseline;
-margin-right: 120px
+margin-right: 120px;
 }
        
 .footer-social-list {
